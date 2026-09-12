@@ -1,0 +1,111 @@
+/* components/form — Group 8's PC sales website */
+/* Áp dụng kiểu cho label;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+label {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:8px;
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+    /* Đặt độ đậm chữ. */
+    font-weight:600;
+}
+
+/* Áp dụng kiểu cho input,select;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+input,select {
+    /* Đặt chiều rộng. */
+    width:100%;
+    /* Đặt đường viền. */
+    border:1px solid #bacdca;
+    /* Đặt nền. */
+    background:white;
+    /* Bo góc khối. */
+    border-radius:7px;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:11px 12px;
+    /* Đặt màu chữ. */
+    color:var(--ink);
+    /* Đặt chiều rộng tối thiểu. */
+    min-width:0;
+}
+
+/* Áp dụng kiểu cho .form-panel;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.form-panel {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:20px;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:32px;
+    /* Đặt nền. */
+    background:white;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Bo góc khối. */
+    border-radius:var(--radius);
+}
+
+/* Áp dụng kiểu cho .form-panel p;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.form-panel p {
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:0;
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+}
+
+/* Áp dụng kiểu cho .form-panel a;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.form-panel a {
+    /* Đặt màu chữ. */
+    color:var(--accent);
+    /* Đặt độ đậm chữ. */
+    font-weight:bold;
+}
+
+/* Áp dụng kiểu cho .notice;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.notice {
+    /* Đặt nền. */
+    background:#f7f3e8;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:14px;
+    /* Đặt màu chữ. */
+    color:#6a562e;
+}
+
+/* Áp dụng kiểu cho fieldset;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+fieldset {
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:16px;
+    /* Bo góc khối. */
+    border-radius:8px;
+}
+
+/* Áp dụng kiểu cho .radio;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.radio {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:10px 0;
+    /* Đặt độ đậm chữ. */
+    font-weight:normal;
+}
+
+/* Áp dụng kiểu cho .radio input;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.radio input {
+    /* Đặt chiều rộng. */
+    width:auto;
+}

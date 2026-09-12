@@ -1,0 +1,35 @@
+/* layout/navbar — Group 8's PC sales website */
+/* Áp dụng kiểu cho .menu;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.menu {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:32px;
+    /* Điều chỉnh khoảng đệm trong theo cạnh/trục được chỉ định. */
+    padding-block:14px;
+    /* Điều chỉnh phần đường viền được chỉ định. */
+    border-top:1px solid var(--line);
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+    /* Đặt độ đậm chữ. */
+    font-weight:700;
+    /* Xử lý nội dung tràn khung. */
+    overflow:auto;
+}
+
+/* Áp dụng kiểu cho .menu a;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.menu a {
+    flex-shrink:0;
+}
+
+/* Áp dụng kiểu cho .menu a[aria-current];
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.menu a[aria-current] {
+    /* Đặt màu chữ. */
+    color:var(--accent);
+    /* Điều chỉnh gạch chân hoặc trang trí chữ. */
+    text-decoration:underline;
+    text-underline-offset:8px;
+}

@@ -1,0 +1,67 @@
+/* Tất cả HTML chỉ link file này. Responsive luôn nạp cuối. */
+/* Nạp ./co-so/dat-lai.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./co-so/dat-lai.css");
+/* Nạp ./co-so/bien-giao-dien.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./co-so/bien-giao-dien.css");
+/* Nạp ./co-so/chung.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./co-so/chung.css");
+/* Nạp ./bo-cuc/dau-trang.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./bo-cuc/dau-trang.css");
+/* Nạp ./bo-cuc/thanh-dieu-huong.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./bo-cuc/thanh-dieu-huong.css");
+/* Nạp ./bo-cuc/chan-trang.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./bo-cuc/chan-trang.css");
+/* Nạp ./thanh-phan/nut-bam.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./thanh-phan/nut-bam.css");
+/* Nạp ./thanh-phan/bieu-mau.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./thanh-phan/bieu-mau.css");
+/* Nạp ./thanh-phan/the-san-pham.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./thanh-phan/the-san-pham.css");
+/* Nạp ./thanh-phan/the-tin-tuc.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./thanh-phan/the-tin-tuc.css");
+/* Nạp ./trang/trang-chu.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/trang-chu.css");
+/* Nạp ./trang/dang-nhap.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/dang-nhap.css");
+/* Nạp ./trang/san-pham.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/san-pham.css");
+/* Nạp ./trang/chi-tiet-san-pham.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/chi-tiet-san-pham.css");
+/* Nạp ./trang/dang-ky.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/dang-ky.css");
+/* Nạp ./trang/gio-hang.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/gio-hang.css");
+/* Nạp ./trang/thanh-toan.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/thanh-toan.css");
+/* Nạp ./trang/tin-tuc.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/tin-tuc.css");
+/* Nạp ./trang/chi-tiet-tin-tuc.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/chi-tiet-tin-tuc.css");
+/* Nạp ./trang/gioi-thieu.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/gioi-thieu.css");
+/* Nạp ./trang/so-do-trang-web.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./trang/so-do-trang-web.css");
+/* Nạp ./tuong-thich/tuong-thich-thiet-bi.css;
+thứ tự nạp quyết định quy tắc ghi đè. */
+@import url("./tuong-thich/tuong-thich-thiet-bi.css");

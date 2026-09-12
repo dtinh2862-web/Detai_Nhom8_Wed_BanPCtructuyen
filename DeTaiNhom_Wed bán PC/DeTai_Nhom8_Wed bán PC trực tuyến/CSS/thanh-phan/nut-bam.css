@@ -1,0 +1,43 @@
+/* components/button — Group 8's PC sales website */
+/* Áp dụng kiểu cho .btn;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.btn {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:inline-flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Phân bố các phần tử theo trục chính. */
+    justify-content:center;
+    /* Đặt đường viền. */
+    border:1px solid var(--accent);
+    /* Đặt nền. */
+    background:var(--accent);
+    /* Đặt màu chữ. */
+    color:#fff;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:13px 22px;
+    /* Bo góc khối. */
+    border-radius:8px;
+    /* Đặt độ đậm chữ. */
+    font-weight:700;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:8px;
+}
+
+/* Áp dụng kiểu cho .btn:hover;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.btn:hover {
+    /* Đặt nền. */
+    background:#066367;
+    /* Đặt màu chữ. */
+    color:#fff;
+}
+
+/* Áp dụng kiểu cho .btn.secondary;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.btn.secondary {
+    /* Đặt nền. */
+    background:transparent;
+    /* Đặt màu chữ. */
+    color:var(--accent);
+}

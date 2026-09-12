@@ -1,0 +1,78 @@
+/* layout/footer — Group 8's PC sales website */
+/* Áp dụng kiểu cho .footer;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer {
+    /* Đặt nền. */
+    background:var(--dark);
+    /* Đặt màu chữ. */
+    color:#e5f1ed;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:48px 0 20px;
+}
+
+/* Áp dụng kiểu cho .footer-grid;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer-grid {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:2fr 1fr 1fr;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:30px;
+}
+
+/* Áp dụng kiểu cho .footer h2;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer h2 {
+    /* Đặt cỡ chữ. */
+    font-size:26px;
+    /* Điều chỉnh khoảng cách giữa các ký tự. */
+    letter-spacing:1px;
+}
+
+/* Áp dụng kiểu cho .footer h2 span;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer h2 span {
+    /* Đặt màu chữ. */
+    color:#6cd3c0;
+}
+
+/* Áp dụng kiểu cho .footer h3;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer h3 {
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+}
+
+/* Áp dụng kiểu cho .footer p,.footer a;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer p,.footer a {
+    /* Đặt cỡ chữ. */
+    font-size:13px;
+    /* Đặt màu chữ. */
+    color:#bbcece;
+}
+
+/* Áp dụng kiểu cho .footer a;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.footer a {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:block;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-bottom:10px;
+}
+
+/* Áp dụng kiểu cho .disclaimer;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.disclaimer {
+    /* Điều chỉnh phần đường viền được chỉ định. */
+    border-top:1px solid #355059;
+    /* Điều chỉnh khoảng đệm trong theo cạnh/trục được chỉ định. */
+    padding-top:20px;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:24px;
+    /* Đặt cỡ chữ. */
+    font-size:11px;
+    /* Đặt màu chữ. */
+    color:#bbcece;
+}

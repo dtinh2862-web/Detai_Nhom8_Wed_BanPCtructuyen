@@ -1,0 +1,54 @@
+/* pages/home — Group 8's PC sales website */
+/* Áp dụng kiểu cho .hero;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.hero {
+    /* Đặt nền. */
+    background:#dceee9;
+    /* Bo góc khối. */
+    border-radius:22px;
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:1.1fr 1fr;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:24px;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:54px;
+}
+
+/* Áp dụng kiểu cho .hero h1;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.hero h1 {
+    /* Đặt cỡ chữ. */
+    font-size:clamp(34px,4.2vw,55px);
+}
+
+/* Áp dụng kiểu cho .hero h1 em;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.hero h1 em {
+    /* Đặt màu chữ. */
+    color:var(--accent);
+    font-style:normal;
+}
+
+/* Áp dụng kiểu cho .hero p;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.hero p {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width:450px;
+}
+
+/* Áp dụng kiểu cho .hero-note;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.hero-note {
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:32px;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-bottom:0;
+    /* Đặt cỡ chữ. */
+    font-size:10px;
+    /* Điều chỉnh khoảng cách giữa các ký tự. */
+    letter-spacing:1.4px;
+}

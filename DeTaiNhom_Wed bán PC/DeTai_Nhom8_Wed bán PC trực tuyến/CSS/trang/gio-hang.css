@@ -1,0 +1,97 @@
+/* pages/cart — Group 8's PC sales website */
+/* Áp dụng kiểu cho .cart-product;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-product {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:14px;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Đặt chiều rộng tối thiểu. */
+    min-width:220px;
+}
+
+/* Áp dụng kiểu cho .cart-product img;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-product img {
+    /* Đặt chiều rộng. */
+    width:70px;
+    /* Đặt nền. */
+    background:#e5eee9;
+    /* Bo góc khối. */
+    border-radius:8px;
+}
+
+/* Áp dụng kiểu cho .cart-table;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-table {
+    /* Đặt chiều rộng tối thiểu. */
+    min-width:850px;
+}
+
+/* Áp dụng kiểu cho .quantity-controls;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.quantity-controls {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:12px;
+}
+
+/* Áp dụng kiểu cho .quantity-controls button;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.quantity-controls button {
+    /* Đặt chiều rộng. */
+    width:30px;
+    /* Đặt chiều cao. */
+    height:30px;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Bo góc khối. */
+    border-radius:5px;
+    /* Đặt nền. */
+    background:white;
+}
+
+/* Áp dụng kiểu cho .remove;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.remove {
+    /* Đặt màu chữ. */
+    color:#ac3333;
+    /* Đặt nền. */
+    background:white;
+    /* Đặt đường viền. */
+    border:0;
+}
+
+/* Áp dụng kiểu cho .cart-footer;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-footer {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Phân bố các phần tử theo trục chính. */
+    justify-content:space-between;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:28px;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:20px;
+}
+
+/* Áp dụng kiểu cho .cart-footer>div;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-footer>div {
+    /* Căn nội dung chữ. */
+    text-align:right;
+}
+
+/* Áp dụng kiểu cho .cart-footer strong;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.cart-footer strong {
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-left:16px;
+}

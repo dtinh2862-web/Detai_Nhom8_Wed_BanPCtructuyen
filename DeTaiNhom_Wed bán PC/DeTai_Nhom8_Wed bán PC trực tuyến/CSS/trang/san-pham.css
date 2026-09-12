@@ -1,0 +1,81 @@
+/* pages/products — Group 8's PC sales website */
+/* Áp dụng kiểu cho .catalog-layout;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.catalog-layout {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:225px 1fr;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:28px;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:start;
+}
+
+/* Áp dụng kiểu cho .filter-panel;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.filter-panel {
+    /* Đặt nền. */
+    background:white;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:22px;
+    /* Bo góc khối. */
+    border-radius:var(--radius);
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:20px;
+}
+
+/* Áp dụng kiểu cho .filter-panel h2;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.filter-panel h2 {
+    /* Đặt cỡ chữ. */
+    font-size:20px;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:0;
+}
+
+/* Áp dụng kiểu cho .catalog-toolbar;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.catalog-toolbar {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Phân bố các phần tử theo trục chính. */
+    justify-content:space-between;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:16px;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-bottom:22px;
+}
+
+/* Áp dụng kiểu cho .catalog-toolbar p;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.catalog-toolbar p {
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:0;
+}
+
+/* Áp dụng kiểu cho .catalog-toolbar label;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.catalog-toolbar label {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:10px;
+}
+
+/* Áp dụng kiểu cho .catalog-layout .product-grid;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.catalog-layout .product-grid {
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:repeat(3,minmax(0,1fr));
+}

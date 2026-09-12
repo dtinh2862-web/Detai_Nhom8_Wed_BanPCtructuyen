@@ -1,0 +1,76 @@
+/* pages/news — Group 8's PC sales website */
+/* Áp dụng kiểu cho .news-grid;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-grid {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:24px;
+}
+
+/* Áp dụng kiểu cho .news-card;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card {
+    /* Xử lý nội dung tràn khung. */
+    overflow:hidden;
+    /* Đặt nền. */
+    background:white;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Bo góc khối. */
+    border-radius:var(--radius);
+}
+
+/* Áp dụng kiểu cho .news-card img;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card img {
+    /* Đặt chiều rộng. */
+    width:100%;
+    /* Giữ tỉ lệ khung ảnh. */
+    aspect-ratio:16/9;
+    /* Chọn cách ảnh vừa khung. */
+    object-fit:cover;
+}
+
+/* Áp dụng kiểu cho .news-card>div;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card>div {
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:24px;
+}
+
+/* Áp dụng kiểu cho .news-card time;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card time {
+    /* Đặt màu chữ. */
+    color:var(--muted);
+    /* Đặt cỡ chữ. */
+    font-size:11px;
+}
+
+/* Áp dụng kiểu cho .news-card h3;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card h3 {
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:12px;
+}
+
+/* Áp dụng kiểu cho .news-card p;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card p {
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+}
+
+/* Áp dụng kiểu cho .news-card div>a;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-card div>a {
+    /* Đặt màu chữ. */
+    color:var(--accent);
+    /* Đặt độ đậm chữ. */
+    font-weight:bold;
+    /* Đặt cỡ chữ. */
+    font-size:13px;
+}

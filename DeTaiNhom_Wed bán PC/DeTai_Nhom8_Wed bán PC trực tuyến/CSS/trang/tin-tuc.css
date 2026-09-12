@@ -1,0 +1,7 @@
+/* Áp dụng kiểu cho .news-filter; các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.news-filter {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width: 300px;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-bottom: 24px;
+}

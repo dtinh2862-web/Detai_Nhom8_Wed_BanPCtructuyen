@@ -1,0 +1,69 @@
+/* pages/product-detail — Group 8's PC sales website */
+/* Áp dụng kiểu cho .detail-grid;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.detail-grid {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:1fr 1fr;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:55px;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+}
+
+/* Áp dụng kiểu cho .detail-image;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.detail-image {
+    /* Đặt nền. */
+    background:#e6efeb;
+    /* Bo góc khối. */
+    border-radius:20px;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:24px;
+}
+
+/* Áp dụng kiểu cho .detail-image img;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.detail-image img {
+    /* Đặt chiều rộng. */
+    width:100%;
+}
+
+/* Áp dụng kiểu cho .detail-grid h1;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.detail-grid h1 {
+    /* Đặt cỡ chữ. */
+    font-size:36px;
+}
+
+/* Áp dụng kiểu cho .detail-price;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.detail-price {
+    /* Đặt cỡ chữ. */
+    font-size:32px;
+    /* Đặt độ đậm chữ. */
+    font-weight:bold;
+    /* Đặt màu chữ. */
+    color:var(--accent);
+}
+
+/* Áp dụng kiểu cho #add-form;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+#add-form {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:18px;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:end;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-bottom:12px;
+}
+
+/* Áp dụng kiểu cho #quantity;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+#quantity {
+    /* Đặt chiều rộng. */
+    width:84px;
+}

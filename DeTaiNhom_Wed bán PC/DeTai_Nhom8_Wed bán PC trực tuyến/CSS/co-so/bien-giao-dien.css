@@ -1,0 +1,25 @@
+/* base/variables — Group 8's PC sales website */
+/* Khai báo các biến giao diện dùng chung. */
+:root {
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--ink). */
+    --ink:#162d36;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--muted). */
+    --muted:#5c7078;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--accent). */
+    --accent:#087f83;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--dark). */
+    --dark:#102f37;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--line). */
+    --line:#dbe5e5;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--paper). */
+    --paper:#f5f8f7;
+    /* Biến CSS dùng chung;
+    lấy giá trị bằng var(--radius). */
+    --radius:14px;
+}

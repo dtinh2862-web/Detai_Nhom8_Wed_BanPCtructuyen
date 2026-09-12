@@ -1,0 +1,8 @@
+/* Áp dụng kiểu cho .login-panel; các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.login-panel {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width: 560px;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin: 0 auto;
+}

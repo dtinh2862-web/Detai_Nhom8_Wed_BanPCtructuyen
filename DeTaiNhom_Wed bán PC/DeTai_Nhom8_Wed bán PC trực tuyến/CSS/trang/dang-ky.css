@@ -1,0 +1,63 @@
+/* pages/register — Group 8's PC sales website */
+/* Áp dụng kiểu cho .form-panel.narrow;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.form-panel.narrow {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width:570px;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:auto;
+}
+
+/* Áp dụng kiểu cho .registration-result;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.registration-result {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width:570px;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:24px auto;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:28px;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Bo góc khối. */
+    border-radius:var(--radius);
+    /* Đặt nền. */
+    background:#e2f0e9;
+}
+
+/* Áp dụng kiểu cho .registration-result dl;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.registration-result dl {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:grid;
+    /* Chia số cột và độ rộng cột trong Grid. */
+    grid-template-columns:120px 1fr;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:10px;
+}
+
+/* Áp dụng kiểu cho .registration-result dt;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.registration-result dt {
+    /* Đặt độ đậm chữ. */
+    font-weight:bold;
+}
+
+/* Áp dụng kiểu cho .registration-result dd;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.registration-result dd {
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:0;
+    /* Cho phép ngắt chuỗi dài để không tràn khung. */
+    overflow-wrap:anywhere;
+}
+
+/* Áp dụng kiểu cho .error;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.error {
+    /* Đặt màu chữ. */
+    color:#a52c2c;
+}

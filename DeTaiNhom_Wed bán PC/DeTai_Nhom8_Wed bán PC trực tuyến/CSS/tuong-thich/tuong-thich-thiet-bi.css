@@ -1,0 +1,290 @@
+/* responsive/responsive — Group 8's PC sales website */
+/* Điều chỉnh giao diện khi chiều rộng màn hình đạt điều kiện bên dưới. */
+@media(max-width:1050px) {
+    /* Áp dụng kiểu cho .header-row;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .header-row {
+        /* Cho phép phần tử xuống hàng khi thiếu chỗ. */
+        flex-wrap:wrap;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:16px;
+    }
+
+    /* Áp dụng kiểu cho .search;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .search {
+        order:4;
+        flex-basis:100%;
+    }
+
+    /* Áp dụng kiểu cho .product-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .product-grid {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    /* Áp dụng kiểu cho .catalog-layout .product-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .catalog-layout .product-grid {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    /* Áp dụng kiểu cho .hero;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .hero {
+        /* Tạo khoảng đệm bên trong khối. */
+        padding:32px;
+    }
+
+}
+
+/* Điều chỉnh giao diện khi chiều rộng màn hình đạt điều kiện bên dưới. */
+@media(max-width:700px) {
+    /* Áp dụng kiểu cho .container;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .container {
+        /* Đặt chiều rộng. */
+        width:calc(100% - 32px);
+    }
+
+    /* Áp dụng kiểu cho .header-row;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .header-row {
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:12px;
+    }
+
+    /* Áp dụng kiểu cho .brand;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .brand {
+        flex-basis:100%;
+    }
+
+    /* Áp dụng kiểu cho .brand img;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .brand img {
+        /* Đặt chiều rộng. */
+        width:170px;
+    }
+
+    /* Áp dụng kiểu cho .menu;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .menu {
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:24px;
+    }
+
+    /* Áp dụng kiểu cho .hero,.detail-grid,.checkout-layout,.about-intro;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .hero,.detail-grid,.checkout-layout,.about-intro {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+    }
+
+    /* Áp dụng kiểu cho .hero;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .hero {
+        /* Tạo khoảng đệm bên trong khối. */
+        padding:28px;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:8px;
+    }
+
+    /* Áp dụng kiểu cho .hero img;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .hero img {
+        /* Giới hạn chiều cao tối đa. */
+        max-height:260px;
+        /* Tạo khoảng cách bên ngoài khối;
+        auto có thể dùng để căn giữa. */
+        margin:auto;
+    }
+
+    /* Áp dụng kiểu cho .hero-note;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .hero-note {
+        /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+        margin-top:20px;
+    }
+
+    /* Áp dụng kiểu cho .section;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .section {
+        /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+        margin-top:44px;
+    }
+
+    /* Áp dụng kiểu cho .section-heading h2;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .section-heading h2 {
+        /* Đặt cỡ chữ. */
+        font-size:23px;
+    }
+
+    /* Áp dụng kiểu cho .section-heading>span;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .section-heading>span {
+        /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+        display:none;
+    }
+
+    /* Áp dụng kiểu cho .catalog-layout;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .catalog-layout {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+    }
+
+    /* Áp dụng kiểu cho .filter-panel;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .filter-panel {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr 1fr;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:12px;
+    }
+
+    /* Áp dụng kiểu cho .filter-panel h2,.filter-panel .btn;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .filter-panel h2,.filter-panel .btn {
+        grid-column:1/-1;
+    }
+
+    /* Áp dụng kiểu cho .news-grid,.footer-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .news-grid,.footer-grid {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+    }
+
+    /* Áp dụng kiểu cho .detail-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .detail-grid {
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:24px;
+    }
+
+    /* Áp dụng kiểu cho .detail-grid h1;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .detail-grid h1 {
+        /* Đặt cỡ chữ. */
+        font-size:30px;
+    }
+
+    /* Áp dụng kiểu cho .order-line;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .order-line {
+        /* Cho phép phần tử xuống hàng khi thiếu chỗ. */
+        flex-wrap:wrap;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:8px;
+    }
+
+    /* Áp dụng kiểu cho .form-panel,.summary;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .form-panel,.summary {
+        /* Tạo khoảng đệm bên trong khối. */
+        padding:22px;
+    }
+
+    /* Áp dụng kiểu cho .cart-footer;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .cart-footer {
+        /* Căn các phần tử theo trục phụ. */
+        align-items:start;
+    }
+
+    /* Áp dụng kiểu cho .cart-footer>div;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .cart-footer>div {
+        /* Giới hạn chiều rộng tối đa. */
+        max-width:65%;
+    }
+
+    /* Áp dụng kiểu cho .sitemap;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .sitemap {
+        /* Tạo khoảng đệm bên trong khối. */
+        padding:16px;
+    }
+
+    /* Áp dụng kiểu cho .sitemap ul;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .sitemap ul {
+        /* Điều chỉnh khoảng đệm trong theo cạnh/trục được chỉ định. */
+        padding-left:12px;
+    }
+
+    /* Áp dụng kiểu cho .member-card;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .member-card {
+        /* Căn các phần tử theo trục phụ. */
+        align-items:start;
+    }
+
+}
+
+/* Điều chỉnh giao diện khi chiều rộng màn hình đạt điều kiện bên dưới. */
+@media(max-width:420px) {
+    /* Áp dụng kiểu cho .product-grid,.catalog-layout .product-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .product-grid,.catalog-layout .product-grid {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+    }
+
+    /* Áp dụng kiểu cho .catalog-toolbar;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .catalog-toolbar {
+        /* Căn các phần tử theo trục phụ. */
+        align-items:start;
+    }
+
+    /* Áp dụng kiểu cho .catalog-toolbar label;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .catalog-toolbar label {
+        /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+        display:grid;
+        /* Giới hạn chiều rộng tối đa. */
+        max-width:170px;
+    }
+
+    /* Áp dụng kiểu cho #add-form;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    #add-form {
+        /* Cho phép phần tử xuống hàng khi thiếu chỗ. */
+        flex-wrap:wrap;
+    }
+
+}
+
+/* Điều chỉnh giao diện khi chiều rộng màn hình đạt điều kiện bên dưới. */
+@media(max-width:700px) {
+    /* Áp dụng kiểu cho .menu;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .menu {
+        /* Cho phép phần tử xuống hàng khi thiếu chỗ. */
+        flex-wrap:wrap;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:14px 24px;
+    }
+
+    /* Áp dụng kiểu cho .product-grid, .catalog-layout .product-grid;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .product-grid, .catalog-layout .product-grid {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+    }
+
+    /* Áp dụng kiểu cho .registration-result dl;
+    các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+    .registration-result dl {
+        /* Chia số cột và độ rộng cột trong Grid. */
+        grid-template-columns:1fr;
+        /* Tạo khoảng cách giữa các phần tử con. */
+        gap:6px;
+    }
+
+}

@@ -1,0 +1,118 @@
+/* layout/header — Group 8's PC sales website */
+/* Áp dụng kiểu cho .header;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.header {
+    /* Đặt nền. */
+    background:white;
+    /* Điều chỉnh phần đường viền được chỉ định. */
+    border-bottom:1px solid var(--line);
+}
+
+/* Áp dụng kiểu cho .header-row;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.header-row {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+    /* Căn các phần tử theo trục phụ. */
+    align-items:center;
+    /* Tạo khoảng cách giữa các phần tử con. */
+    gap:24px;
+    /* Điều chỉnh khoảng đệm trong theo cạnh/trục được chỉ định. */
+    padding-block:22px;
+}
+
+/* Áp dụng kiểu cho .brand;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.brand {
+    flex-shrink:0;
+}
+
+/* Áp dụng kiểu cho .brand img;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.brand img {
+    /* Đặt chiều rộng. */
+    width:220px;
+}
+
+/* Áp dụng kiểu cho .search;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.search {
+    /* Quy định khả năng co giãn trong Flexbox. */
+    flex:1;
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:flex;
+}
+
+/* Áp dụng kiểu cho .search input;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.search input {
+    /* Bo góc khối. */
+    border-radius:8px 0 0 8px;
+    /* Đặt chiều rộng tối thiểu. */
+    min-width:0;
+}
+
+/* Áp dụng kiểu cho .search button;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.search button {
+    /* Đặt đường viền. */
+    border:0;
+    /* Đặt nền. */
+    background:var(--dark);
+    /* Đặt màu chữ. */
+    color:white;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:0 18px;
+    /* Bo góc khối. */
+    border-radius:0 8px 8px 0;
+}
+
+/* Áp dụng kiểu cho .header-row>a:not(.brand);
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.header-row>a:not(.brand) {
+    /* Đặt cỡ chữ. */
+    font-size:14px;
+    /* Quy định cách giữ khoảng trắng và xuống dòng. */
+    white-space:nowrap;
+}
+
+/* Áp dụng kiểu cho #logout;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+#logout {
+    /* Đặt nền. */
+    background:white;
+    /* Đặt đường viền. */
+    border:1px solid var(--line);
+    /* Bo góc khối. */
+    border-radius:6px;
+    /* Tạo khoảng đệm bên trong khối. */
+    padding:6px;
+}
+
+/* Áp dụng kiểu cho #cart-count;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+#cart-count {
+    /* Chọn cách bố trí phần tử (block, flex hoặc grid). */
+    display:inline-grid;
+    /* Căn phần tử theo cả hai chiều trong Grid. */
+    place-items:center;
+    /* Đặt nền. */
+    background:#def1ed;
+    /* Đặt màu chữ. */
+    color:var(--accent);
+    /* Bo góc khối. */
+    border-radius:50%;
+    /* Đặt chiều rộng tối thiểu. */
+    min-width:23px;
+    /* Đặt chiều cao tối thiểu. */
+    min-height:23px;
+    /* Đặt độ đậm chữ. */
+    font-weight:bold;
+}
+
+/* Icon cùng ý nghĩa dùng cùng một file ảnh trên mọi trang. */
+.nav-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <!-- Khai báo thông tin trang, CSS và JavaScript. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Group 8's PC sales website — Đồ án website tĩnh Nhóm 8.">
+        <!-- Tiêu đề riêng xuất hiện trên tab trình duyệt. -->
+        <title>
+            Đăng nhập | Group 8's PC sales website
+        </title>
+        <!-- Nạp CSS chung; chinh.css sẽ import các CSS con. -->
+        <link rel="stylesheet" href="../CSS/chinh.css">
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/du-lieu.js" defer>
+        </script>
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/dung-chung.js" defer>
+        </script>
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/tai-khoan.js" defer>
+        </script>
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/san-pham.js" defer>
+        </script>
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/gio-hang.js" defer>
+        </script>
+        <!-- Nạp JavaScript ngoài; defer chờ HTML phân tích xong rồi thực thi theo thứ tự. -->
+        <script src="../JS/tin-tuc.js" defer>
+        </script>
+    </head>
+    <body data-page="login">
+        <a class="skip-link" href="#main">
+            Đến nội dung
+        </a>
+        <!-- Đầu trang dùng chung: logo, tìm kiếm, liên kết tài khoản và giỏ hàng. -->
+        <header class="header">
+            <div class="container header-row">
+                <a class="brand" href="trang-chu.html">
+                    <!-- Ảnh minh họa: src là đường dẫn, alt mô tả khi ảnh không tải được. -->
+                    <img src="../IMG/logo/logo-nhom8.svg" alt="Group 8's PC sales website" width="190" height="40">
+                </a>
+                <!-- Biểu mẫu nhập liệu; action hoặc sự kiện submit quyết định cách xử lý. -->
+                <form class="search" action="san-pham.html">
+                    <!-- Nhãn mô tả trường nhập để người dùng biết cần điền gì. -->
+                    <label class="sr-only" for="global-search">
+                        Tìm sản phẩm
+                    </label>
+                    <!-- Trường nhập dữ liệu; name là khóa đọc bằng FormData, type quyết định kiểu nhập. -->
+                    <input id="global-search" name="q" type="search" placeholder="Tìm PC, linh kiện…">
+                    <!-- Nút thao tác; trong form, type submit gửi biểu mẫu để xử lý. -->
+                    <button aria-label="Tìm kiếm">
+                        Tìm
+                    </button>
+                </form>
+                <a href="dang-nhap.html" id="account-link">
+                    <img class="nav-icon" src="../IMG/bieu-tuong/bieu-tuong-tai-khoan.svg" alt="" width="20" height="20">
+                    Đăng nhập
+                </a>
+                <a href="dang-ky.html">
+                    Đăng ký
+                </a>
+                <!-- Nút thao tác; trong form, type submit gửi biểu mẫu để xử lý. -->
+                <button id="logout" hidden>
+                    Đăng xuất
+                </button>
+                <a class="cart-link" href="gio-hang.html">
+                    <img class="nav-icon" src="../IMG/bieu-tuong/bieu-tuong-gio-hang.svg" alt="" width="20" height="20">
+                    Giỏ hàng
+                    <span id="cart-count">
+                        0
+                    </span>
+                </a>
+            </div>
+            <!-- Khối điều hướng: các liên kết đưa người dùng tới trang tương ứng. -->
+            <nav class="menu container" aria-label="Menu chính">
+                <a href="trang-chu.html">
+                    Trang chủ
+                </a>
+                <a href="san-pham.html">
+                    Sản phẩm
+                </a>
+                <a href="tin-tuc.html">
+                    Tin tức
+                </a>
+                <a href="gioi-thieu.html">
+                    Giới thiệu
+                </a>
+                <a href="so-do-trang-web.html">
+                    Sitemap
+                </a>
+            </nav>
+        </header>
+        <!-- Nội dung riêng của trang; header và footer vẫn dùng chung. -->
+        <main class="container" id="main">
+            <div class="page-title">
+                <h1>
+                    Đăng nhập
+                </h1>
+                <p>
+                    Sử dụng tài khoản demo đã đăng ký trên trình duyệt này.
+                </p>
+            </div>
+            <!-- Biểu mẫu nhập liệu; action hoặc sự kiện submit quyết định cách xử lý. -->
+            <form id="login-form" class="form-panel login-panel">
+                <!-- Nhãn mô tả trường nhập để người dùng biết cần điền gì. -->
+                <label>
+                    Tên đăng nhập hoặc email
+                    <input name="identity" required autocomplete="username">
+                </label>
+                <!-- Nhãn mô tả trường nhập để người dùng biết cần điền gì. -->
+                <label>
+                    Mật khẩu thử nghiệm
+                    <input name="password" type="password" required autocomplete="current-password">
+                </label>
+                <!-- Nút thao tác; trong form, type submit gửi biểu mẫu để xử lý. -->
+                <button class="btn" type="submit">
+                    Đăng nhập
+                </button>
+                <p id="login-message" role="status">
+                </p>
+                <p>
+                    Chưa có tài khoản?
+                    <a href="dang-ky.html">
+                        Đăng ký
+                    </a>
+                </p>
+                <p class="notice">
+                    Chỉ dùng tài khoản và mật khẩu thử nghiệm. Website không xác thực bằng máy chủ.
+                </p>
+            </form>
+        </main>
+        <!-- Chân trang dùng chung: giới thiệu, hỗ trợ, chính sách và liên hệ. -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <h2>Group 8's PC sales website</h2>
+                    <p>
+                        DeTai_Nhom8_Wed bán PC trực tuyến
+                    </p>
+                    <p>
+                        Đồ án website tĩnh • Nhóm 8
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        Khám phá
+                    </h3>
+                    <a href="san-pham.html">
+                        Sản phẩm
+                    </a>
+                    <a href="tin-tuc.html">
+                        Tin tức
+                    </a>
+                    <a href="so-do-trang-web.html">
+                        Sitemap
+                    </a>
+                </div>
+                <div>
+                    <h3>
+                        Hỗ trợ & chính sách
+                    </h3>
+                    <a href="gioi-thieu.html#support">
+                        Hướng dẫn mua hàng
+                    </a>
+                    <a href="gioi-thieu.html#policy">
+                        Chính sách mô phỏng
+                    </a>
+                    <a href="gioi-thieu.html#contact">
+                        Liên hệ nhóm
+                    </a>
+                </div>
+            </div>
+            <div class="container disclaimer">
+                Bản demo học tập. Sản phẩm, giá và hình ảnh minh họa; không nhận đơn hàng hay thanh toán thật.
+            </div>
+        </footer>
+        <div id="toast" class="toast" role="status" hidden>
+        </div>
+        <noscript>
+            <p>
+                Vui lòng bật JavaScript để dùng sản phẩm, tài khoản và giỏ hàng.
+            </p>
+        </noscript>
+    </body>
+</html>
