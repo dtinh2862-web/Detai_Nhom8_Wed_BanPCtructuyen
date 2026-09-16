@@ -1,0 +1,19 @@
+/* Hệ màu xanh công nghệ và nền sáng dành cho đề tài PC; var() dùng lại ở các file khác. */
+:root {
+    --mau-den-sau: #0b0f19;
+    --mau-den-xam: #1f2937;
+    --mau-nav: #212529;
+    --mau-nhan: #67d9ed;
+    --mau-nhan-sang: #a5f3fc;
+    --mau-nhan-dam: #036980;
+    --mau-nen: #f3f7fb;
+    --mau-chu: #111827;
+    --mau-chu-phu: #6b7280;
+    --bo-goc: 18px;
+    --bong: 0 10px 24px rgba(17,24,39,.10);
+    --bong-hover: 0 16px 34px rgba(17,24,39,.14);
+    /* Alias giữ tương thích những selector đã có, không đổi tên file. */
+    --ink: var(--mau-chu); --muted: var(--mau-chu-phu);
+    --accent: var(--mau-nhan-dam); --dark: var(--mau-nav);
+    --paper: var(--mau-nen); --line: rgba(17,24,39,.10); --radius: var(--bo-goc);
+}

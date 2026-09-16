@@ -1,0 +1,7 @@
+/* base/reset — Group 8's PC sales website */
+/* Áp dụng kiểu cho *;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+* {
+    /* Tính padding và border vào kích thước khi dùng border-box. */
+    box-sizing:border-box;
+}

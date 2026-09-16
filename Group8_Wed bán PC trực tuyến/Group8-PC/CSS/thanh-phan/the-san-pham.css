@@ -1,0 +1,12 @@
+/* Card trắng, góc 18px, shadow và hover theo nhóm tham khảo. */
+.product-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: white; box-shadow: var(--bong); transition: transform .18s, box-shadow .18s; }
+.product-card:hover { transform: translateY(-3px); box-shadow: var(--bong-hover); }
+.product-image { overflow: hidden; background: #eaf2f8; }
+.product-image img { width: 100%; aspect-ratio: 6/5; object-fit: contain; transition: transform .5s; }
+.product-card:hover img { transform: scale(1.05); }
+.product-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+.product-body h3 { font-size: 1rem; }
+.product-body p { font-size: .8rem; }
+.product-bottom { margin-top: auto; display: grid; gap: 8px; }
+.tag { color: #036980; font-size: .7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+@media (min-width: 1200px) { #featured > .product-column { width: 25%; } }

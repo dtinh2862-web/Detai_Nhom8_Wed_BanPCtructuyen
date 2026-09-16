@@ -1,0 +1,42 @@
+/* pages/news-detail — Group 8's PC sales website */
+/* Áp dụng kiểu cho .article;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.article {
+    /* Giới hạn chiều rộng tối đa. */
+    max-width:800px;
+    /* Tạo khoảng cách bên ngoài khối;
+    auto có thể dùng để căn giữa. */
+    margin:auto;
+}
+
+/* Áp dụng kiểu cho .article h1;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.article h1 {
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:20px;
+}
+
+/* Áp dụng kiểu cho .article-cover;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.article-cover {
+    /* Đặt chiều rộng. */
+    width:100%;
+    /* Bo góc khối. */
+    border-radius:16px;
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-block:28px;
+}
+
+/* Áp dụng kiểu cho .article h2;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.article h2 {
+    /* Điều chỉnh khoảng cách ngoài theo cạnh/trục được chỉ định. */
+    margin-top:32px;
+}
+
+/* Áp dụng kiểu cho .article .lead;
+các khai báo bên dưới chỉ tác động tới phần tử khớp bộ chọn này. */
+.article .lead {
+    /* Đặt cỡ chữ. */
+    font-size:20px;
+}

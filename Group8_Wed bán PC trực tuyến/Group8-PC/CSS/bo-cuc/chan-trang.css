@@ -1,0 +1,9 @@
+/* Footer dark cùng navbar, chia cột gọn và link hover gold. */
+.footer { background: var(--mau-nav); color: white; padding: 42px 0 18px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+.footer h2 { max-width: 360px; font-size: 1.5rem; color: var(--mau-nhan); }
+.footer h3 { font-size: 1rem; }
+.footer p, .disclaimer { color: #c5c6c8; }
+.footer a { display: block; margin-top: 8px; color: #eee; }
+.footer a:hover { color: var(--mau-nhan); }
+.disclaimer { border-top: 1px solid #ffffff20; padding-top: 20px; margin-top: 28px; font-size: .8rem; }

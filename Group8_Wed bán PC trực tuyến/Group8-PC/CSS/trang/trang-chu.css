@@ -1,0 +1,13 @@
+/* Hero xanh công nghệ cho đề tài bán PC. */
+.hero { background: linear-gradient(115deg, #0b0f19, #1f2937 65%, #123c55); color: white; padding: 56px; border-radius: var(--radius); }
+.hero h1 { max-width: 720px; }
+.hero p { color: #d8d7d3; max-width: 600px; }
+.hero .eyebrow { color: var(--mau-nhan); }
+/* Danh mục trái và carousel phải: Bootstrap col-lg-3/9 quyết định độ rộng. */
+.category-panel { background: white; padding: 24px; height: 100%; border-radius: var(--radius); box-shadow: var(--bong); }
+.category-panel h2 { font-size: 1rem; margin-bottom: 20px; }
+.category-panel a { display: block; border-bottom: 1px solid var(--line); padding: 14px 0; }
+.carousel-pc { border-radius: var(--radius); overflow: hidden; background: #20262c; }
+.carousel-pc .carousel-item img { height: 370px; width: 100%; object-fit: contain; background: #e5f3fa; }
+.carousel-pc .carousel-caption { left: 0; right: 0; bottom: 0; padding: 18px 48px; background: #101820d9; color: white; }
+.carousel-caption p { color: #eee; margin: 0; }

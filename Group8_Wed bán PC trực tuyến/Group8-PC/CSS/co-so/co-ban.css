@@ -1,0 +1,39 @@
+/* Kiểu chữ và nền toàn website; flex giúp footer xuống cuối trang ngắn. */
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+main { flex: 1; padding-block: 40px 64px; }
+img { max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+h1, h2, h3 { font-weight: 750; line-height: 1.2; }
+h1 { font-size: clamp(2rem, 4vw, 3.4rem); }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.1rem; }
+p { color: var(--muted); }
+[hidden] { display: none !important; }
+/* Phản hồi bàn phím và bỏ chuyển động nếu người dùng yêu cầu. */
+:focus-visible { outline: 3px solid var(--mau-nhan-dam); outline-offset: 4px; }
+.sr-only, .skip-link:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.skip-link:focus { position: fixed; top: 8px; left: 8px; z-index: 2000; background: white; padding: 12px; }
+/* Khối tiêu đề, nhóm nội dung và dòng nhãn dùng chung. */
+.page-title { padding-block: 12px 32px; }
+.page-title p { max-width: 700px; }
+.eyebrow { display: block; color: var(--accent); font-size: .75rem; font-weight: 750; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+.section { margin-top: 48px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.section-heading h2 { margin: 0; }
+.small { font-size: .85rem; color: var(--muted); }
+.price { color: #036980; font-size: 1.2rem; }
+.empty { padding: 42px 24px; text-align: center; background: white; border-radius: var(--radius); }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; background: white; border-collapse: collapse; }
+th, td { text-align: left; padding: 16px; border-bottom: 1px solid var(--line); }
+caption { padding: 12px; }
+/* Thông báo trạng thái riêng, không dùng class toast của thư viện. */
+.site-notice { position: fixed; bottom: 24px; right: 24px; max-width: min(420px, calc(100% - 48px)); padding: 16px 24px; background: var(--dark); color: white; border-left: 4px solid var(--mau-nhan); border-radius: 12px; z-index: 2000; box-shadow: var(--bong); }
+
+/* Thanh công cụ dùng chung các trang chuyển từ collection/sale/promotion. */
+.browse-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:16px; padding:20px; margin-bottom:28px; background:white; border:1px solid var(--line); border-radius:var(--radius); }
+.browse-toolbar .form-control { flex:1; min-width:180px; }
+.browse-toolbar .form-select { width:auto; }
+.browse-toolbar label { white-space:nowrap; }
+.saved-actions { padding:0 20px 20px; }

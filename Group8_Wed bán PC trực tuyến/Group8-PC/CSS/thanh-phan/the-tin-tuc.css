@@ -1,0 +1,10 @@
+/* Card tin có cùng góc, bóng và hover với sản phẩm để thống nhất giao diện. */
+.news-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--bong); transition: transform .18s, box-shadow .18s; }
+.news-card:hover { transform: translateY(-3px); box-shadow: var(--bong-hover); }
+.news-card > a { overflow: hidden; }
+.news-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; transition: transform .5s; }
+.news-card:hover img { transform: scale(1.05); }
+.news-card > div { padding: 24px; }
+.news-card time { color: var(--muted); font-size: .75rem; }
+.news-card h3 { margin-top: 10px; }
+.news-card p { font-size: .85rem; }

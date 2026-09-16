@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <!-- Khai báo thông tin trang, CSS và JavaScript. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Group 8's PC sales website — Đồ án website tĩnh Nhóm 8.">
+        <!-- Tiêu đề riêng xuất hiện trên tab trình duyệt. -->
+        <title>PC giảm giá | Group 8's PC sales website</title>
+        <!-- Nạp CSS chung; chinh.css sẽ import các CSS con. -->
+        <!-- Bootstrap local tạo grid/navbar/form; chinh.css chỉ nạp CSS tự viết. -->
+        <link rel="stylesheet" href="../CSS/thu-vien/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/chinh.css">
+        <!-- CSS riêng chỉ tải trên trang gioi-thieu, không nằm trong chinh.css. -->
+        <link rel="stylesheet" href="../CSS/trang/giam-gia.css">
+    </head>
+    <body class="giam-gia" data-page="giam-gia">
+        <a class="skip-link" href="#main">
+            Đến nội dung
+        </a>
+        <!-- Đầu trang dùng chung: logo, tìm kiếm, liên kết tài khoản và giỏ hàng. -->
+        <header class="header sticky-top">
+            <!-- Navbar Bootstrap: dark, mở ngang từ lg; sticky giữ menu khi cuộn. -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow" aria-label="Menu chính">
+                <div class="container">
+                    <a class="navbar-brand brand" href="trang-chu.html">
+                        <img src="../IMG/logo/logo-nhom8.svg" alt="" width="42" height="42">
+                        <span>Group 8's PC sales website</span>
+                    </a>
+                    <!-- data-bs-target phải trùng id vùng collapse; aria mô tả trạng thái nút. -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                            aria-controls="mainNav" aria-expanded="false" aria-label="Mở hoặc đóng menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav menu mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="trang-chu.html">Trang chủ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="san-pham.html">Sản phẩm</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tin-tuc.html">Tin tức</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới thiệu</a></li>
+                            <!-- Dropdown Bootstrap giúp giữ menu gọn khi có đủ trang của mẫu. -->
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Khám phá</a>
+                                <ul class="dropdown-menu"><li><a class="dropdown-item" href="bo-suu-tap.html">Bộ sưu tập PC</a></li><li><a class="dropdown-item" href="giam-gia.html">PC giảm giá</a></li><li><a class="dropdown-item" href="khuyen-mai.html">Mã khuyến mãi</a></li><li><a class="dropdown-item" href="tai-khoan.html">Tài khoản</a></li><li><a class="dropdown-item" href="so-do-trang.html">Sitemap</a></li></ul>
+                            </li>
+                        </ul>
+                        <div class="header-actions">
+                            <!-- Form GET truyền q sang danh sách, không cần thêm JS tìm kiếm header. -->
+                            <form class="search" action="san-pham.html">
+                                <label class="sr-only" for="global-search">Tìm PC</label>
+                                <input class="form-control" id="global-search" name="q" type="search" placeholder="Tìm PC…" aria-label="Từ khóa PC">
+                                <button class="btn btn-warning" type="submit">Tìm</button>
+                            </form>
+                            <a href="dang-nhap.html" id="account-link"><span id="account-name">Đăng nhập</span></a>
+                            <a href="dang-ky.html">Đăng ký</a>
+                            <button class="btn btn-outline-light" type="button" id="logout" hidden>Đăng xuất</button>
+                            <a class="cart-link" href="gio-hang.html">Giỏ hàng <span class="badge rounded-pill" id="cart-count">0</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Nội dung riêng của trang; header và footer vẫn dùng chung. -->
+        <main class="container" id="main">
+<!-- Nội dung riêng của trang PC giảm giá; dùng lại navbar/footer chung. -->
+<div class="page-title"><span class="eyebrow">GROUP 8 DEALS</span><h1>Cấu hình nổi bật, giá dễ chọn</h1><p>Giá và mức giảm chỉ là dữ liệu minh họa.</p></div>
+<div class="browse-toolbar"><label for="deal-search">Tìm PC</label><input class="form-control" id="deal-search" type="search"><label for="deal-sort">Sắp xếp</label><select class="form-select" id="deal-sort"><option value="asc">Giá tăng dần</option><option value="desc">Giá giảm dần</option></select><label class="d-flex gap-2"><input type="checkbox" class="form-check-input" id="deal-saved">Chỉ đã lưu</label></div>
+<!-- card() dùng chung với danh sách, có thêm giá tham chiếu và nút lưu ưu đãi. --><div class="row g-4" id="deal-list"></div>
+</main>
+        <!-- Chân trang dùng chung: giới thiệu, hỗ trợ, chính sách và liên hệ. -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <h2>Group 8's PC sales website</h2>
+                    <p>
+                        DeTai_Nhom8_Wed bán PC trực tuyến
+                    </p>
+                    <p>
+                        Đồ án website tĩnh • Nhóm 8
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        Khám phá
+                    </h3>
+                    <a href="san-pham.html">
+                        Sản phẩm
+                    </a>
+                    <a href="tin-tuc.html">
+                        Tin tức
+                    </a>
+                    <a href="so-do-trang.html">
+                        Sitemap
+                    </a>
+                </div>
+                <div>
+                    <h3>
+                        Hỗ trợ & chính sách
+                    </h3>
+                    <a href="gioi-thieu.html#support">
+                        Hướng dẫn mua hàng
+                    </a>
+                    <a href="gioi-thieu.html#policy">
+                        Chính sách mô phỏng
+                    </a>
+                    <a href="gioi-thieu.html#contact">
+                        Liên hệ nhóm
+                    </a>
+                </div>
+            </div>
+            <div class="container disclaimer">
+                Bản demo học tập. Sản phẩm, giá và hình ảnh minh họa; không nhận đơn hàng hay thanh toán thật.
+            </div>
+        </footer>
+        <div id="toast" class="site-notice" role="status" hidden>
+        </div>
+        <noscript>
+            <p>
+                Vui lòng bật JavaScript để dùng sản phẩm, tài khoản và giỏ hàng.
+            </p>
+        </noscript>
+        <!-- jQuery và Bootstrap local trước, dữ liệu → auth → chung → nghiệp vụ. -->
+        <script src="../JS/thu-vien/jquery.min.js"></script>
+        <script src="../JS/thu-vien/bootstrap.bundle.min.js"></script>
+        <script src="../JS/du-lieu.js"></script>
+        <script src="../JS/xac-thuc.js"></script>
+        <script src="../JS/chung.js"></script>
+        <script src="../JS/san-pham.js"></script>
+        <script src="../JS/giam-gia.js"></script>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+/* Bố cục riêng trang Tài khoản; màu và component chung lấy từ chinh.css. */
+.tai-khoan .page-title { padding-block: 28px 36px; }
+/* Card hồ sơ và details lịch sử đơn như pattern account của mẫu. */
+.profile-card, .order-card { background: white; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin-bottom: 16px; box-shadow: var(--bong); }
+.order-card summary { cursor: pointer; padding-bottom: 12px; }

@@ -1,0 +1,3 @@
+/* Form đăng nhập độc lập, nằm giữa trang trong card trắng. */
+.dang-nhap .page-title { text-align: center; }
+.dang-nhap .page-title p { margin-inline: auto; }
