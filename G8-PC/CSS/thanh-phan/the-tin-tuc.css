@@ -1,0 +1,53 @@
+/* Card tin có cùng góc, bóng và hover với sản phẩm để thống nhất giao diện. */
+.news-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--bong);
+    transition: transform .18s, box-shadow .18s;
+}
+
+/* Định dạng .news-card:hover; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--bong-hover);
+}
+
+/* Định dạng .news-card>a; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card>a {
+    overflow: hidden;
+}
+
+/* Định dạng .news-card img; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+/* Định dạng .news-card:hover img; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Định dạng .news-card>div; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card>div {
+    padding: 24px;
+}
+
+/* Định dạng .news-card time; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card time {
+    color: var(--muted);
+    font-size: .75rem;
+}
+
+/* Định dạng .news-card h3; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card h3 {
+    margin-top: 10px;
+}
+
+/* Định dạng .news-card p; áp dụng cho các phần tử khớp bộ chọn này. */
+.news-card p {
+    font-size: .85rem;
+}

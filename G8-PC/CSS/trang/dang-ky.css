@@ -1,0 +1,28 @@
+/* Form đăng ký rộng hơn login; các trường dùng Bootstrap row/col trong HTML. */
+.dang-ky .page-title {
+    text-align: center;
+}
+
+/* Định dạng .dang-ky .page-title p; áp dụng cho các phần tử khớp bộ chọn này. */
+.dang-ky .page-title p {
+    margin-inline: auto;
+}
+
+/* Định dạng #register-form; áp dụng cho các phần tử khớp bộ chọn này. */
+#register-form {
+    max-width: 880px;
+}
+
+/* Định dạng .registration-result; áp dụng cho các phần tử khớp bộ chọn này. */
+.registration-result {
+    max-width: 880px;
+    margin: 28px auto;
+    border-top: 4px solid var(--mau-nhan);
+}
+
+/* Định dạng .registration-result dl; áp dụng cho các phần tử khớp bộ chọn này. */
+.registration-result dl {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 12px;
+}

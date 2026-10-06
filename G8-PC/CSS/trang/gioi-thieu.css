@@ -1,0 +1,37 @@
+/* Ảnh và phần giới thiệu chia hai cột, tự chuyển một cột qua CSS tương thích. */
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Bo góc và nền nhẹ giúp ảnh máy tính nổi bật. */
+.about-intro>img {
+    background: #e5f3fa;
+    border-radius: 20px;
+}
+
+/* Mỗi lợi ích có nền trắng; height 100% làm các thẻ trong hàng cao bằng nhau. */
+.service-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px;
+    height: 100%;
+}
+
+/* Tiêu đề thẻ nhỏ hơn tiêu đề chính; văn bản giới hạn chiều rộng để dễ đọc. */
+.service-card h2 {
+    font-size: 1.25rem;
+}
+
+/* Định dạng .prose; áp dụng cho các phần tử khớp bộ chọn này. */
+.prose {
+    max-width: 800px;
+}
+
+/* Tách các bước mua hàng bằng khoảng cách thay vì chèn dòng trống trong HTML. */
+.prose li {
+    margin-bottom: 12px;
+}

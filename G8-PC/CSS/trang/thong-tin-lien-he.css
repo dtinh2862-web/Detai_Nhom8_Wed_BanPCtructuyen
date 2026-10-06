@@ -1,0 +1,37 @@
+/* Tách danh bạ khỏi footer; lưới cột do row/col-* của Bootstrap đảm nhiệm. */
+.contact-grid { margin-bottom: 64px; }
+
+/* Thẻ cùng chiều cao, giữ màu nền/viền/bo góc theo hệ giao diện hiện tại. */
+.contact-card {
+    padding: 30px 24px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--bong);
+}
+
+/* Avatar hình tròn; object-fit giữ ảnh người thật không bị méo khi thay ảnh. */
+.contact-avatar {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Tên thành viên căn giữa, không để họ tên dài làm tràn thẻ. */
+.contact-card h2 { font-size: 1.25rem; text-align: center; margin-bottom: 24px; overflow-wrap: anywhere; }
+
+/* Biểu tượng nằm cạnh thông tin; min-width 0 cho phép email dài xuống dòng. */
+.contact-line { display: flex; align-items: flex-start; gap: 12px; margin-top: 18px; }
+.contact-line img { flex-shrink: 0; margin-top: 3px; }
+.contact-line > div { min-width: 0; }
+.contact-line a { display: block; color: var(--mau-nhan-dam); overflow-wrap: anywhere; }
+
+/* Nhãn nhỏ giúp phân biệt điện thoại với Gmail; thông tin thiếu không có kiểu liên kết. */
+.contact-label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 3px; }
+.contact-pending { color: var(--muted); }
+
+/* Phản hồi khi rê chuột hoặc chọn liên kết bằng bàn phím. */
+.contact-line a:hover, .contact-line a:focus-visible { text-decoration: underline; }

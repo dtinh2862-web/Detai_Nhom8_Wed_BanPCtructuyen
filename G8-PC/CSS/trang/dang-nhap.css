@@ -1,0 +1,9 @@
+/* Form đăng nhập độc lập, nằm giữa trang trong card trắng. */
+.dang-nhap .page-title {
+    text-align: center;
+}
+
+/* Định dạng .dang-nhap .page-title p; áp dụng cho các phần tử khớp bộ chọn này. */
+.dang-nhap .page-title p {
+    margin-inline: auto;
+}

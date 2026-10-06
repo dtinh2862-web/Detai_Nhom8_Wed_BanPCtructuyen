@@ -1,0 +1,75 @@
+/* Card trắng, góc 18px, shadow và hover theo nhóm tham khảo. */
+.product-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--bong);
+    transition: transform .18s, box-shadow .18s;
+}
+
+/* Định dạng .product-card:hover; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--bong-hover);
+}
+
+/* Định dạng .product-image; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-image {
+    overflow: hidden;
+    background: #eaf2f8;
+}
+
+/* Định dạng .product-image img; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-image img {
+    width: 100%;
+    aspect-ratio: 6/5;
+    object-fit: contain;
+    transition: transform .5s;
+}
+
+/* Định dạng .product-card:hover img; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Định dạng .product-body; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Định dạng .product-body h3; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-body h3 {
+    font-size: 1rem;
+}
+
+/* Định dạng .product-body p; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-body p {
+    font-size: .8rem;
+}
+
+/* Định dạng .product-bottom; áp dụng cho các phần tử khớp bộ chọn này. */
+.product-bottom {
+    margin-top: auto;
+    display: grid;
+    gap: 8px;
+}
+
+/* Định dạng .tag; áp dụng cho các phần tử khớp bộ chọn này. */
+.tag {
+    color: #036980;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Điều chỉnh giao diện theo điều kiện màn hình hoặc tùy chọn chuyển động. */
+@media (min-width: 1200px) {
+    #featured>.product-column {
+        width: 25%;
+    }
+}

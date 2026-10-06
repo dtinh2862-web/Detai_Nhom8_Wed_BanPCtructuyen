@@ -1,0 +1,51 @@
+/* Footer dark cùng navbar, chia cột gọn và link hover gold. */
+.footer {
+    background: var(--mau-nav);
+    color: white;
+    padding: 42px 0 18px;
+}
+
+/* Định dạng .footer-grid; áp dụng cho các phần tử khớp bộ chọn này. */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 32px;
+}
+
+/* Định dạng .footer h2; áp dụng cho các phần tử khớp bộ chọn này. */
+.footer h2 {
+    max-width: 360px;
+    font-size: 1.5rem;
+    color: var(--mau-nhan);
+}
+
+/* Định dạng .footer h3; áp dụng cho các phần tử khớp bộ chọn này. */
+.footer h3 {
+    font-size: 1rem;
+}
+
+.footer p,
+/* Định dạng .disclaimer; áp dụng cho các phần tử khớp bộ chọn này. */
+.disclaimer {
+    color: #c5c6c8;
+}
+
+/* Định dạng .footer a; áp dụng cho các phần tử khớp bộ chọn này. */
+.footer a {
+    display: block;
+    margin-top: 8px;
+    color: #eee;
+}
+
+/* Định dạng .footer a:hover; áp dụng cho các phần tử khớp bộ chọn này. */
+.footer a:hover {
+    color: var(--mau-nhan);
+}
+
+/* Định dạng .disclaimer; áp dụng cho các phần tử khớp bộ chọn này. */
+.disclaimer {
+    border-top: 1px solid #ffffff20;
+    padding-top: 20px;
+    margin-top: 28px;
+    font-size: .8rem;
+}

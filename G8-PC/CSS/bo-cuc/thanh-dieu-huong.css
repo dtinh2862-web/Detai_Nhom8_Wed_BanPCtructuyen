@@ -1,0 +1,43 @@
+/* Navbar dark nhất quán; collapse của Bootstrap mở từ 992px. */
+.header .navbar {
+    background: var(--mau-nav);
+}
+
+/* Định dạng .menu; áp dụng cho các phần tử khớp bộ chọn này. */
+.menu {
+    gap: 4px;
+}
+
+/* Định dạng .menu .nav-link; áp dụng cho các phần tử khớp bộ chọn này. */
+.menu .nav-link {
+    color: rgba(255, 255, 255, .85);
+    position: relative;
+    font-size: .85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Định dạng .menu .nav-link::after; áp dụng cho các phần tử khớp bộ chọn này. */
+.menu .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+    height: 2px;
+    background: var(--mau-nhan);
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.menu .nav-link:hover,
+/* Định dạng .menu .nav-link[aria-current]; áp dụng cho các phần tử khớp bộ chọn này. */
+.menu .nav-link[aria-current] {
+    color: var(--mau-nhan);
+}
+
+.menu .nav-link:hover::after,
+/* Định dạng .menu .nav-link[aria-current]::after; áp dụng cho các phần tử khớp bộ chọn này. */
+.menu .nav-link[aria-current]::after {
+    transform: scaleX(1);
+}

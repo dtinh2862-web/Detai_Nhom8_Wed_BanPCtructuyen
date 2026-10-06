@@ -1,0 +1,44 @@
+/* Tóm tắt đơn giữ trong tầm nhìn; bố cục col-lg-7/5 đặt trong HTML. */
+.summary {
+    position: sticky;
+    top: 110px;
+}
+
+.summary h2,
+/* Định dạng .form-panel h2; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-panel h2 {
+    font-size: 1.3rem;
+}
+
+/* Định dạng .order-line; áp dụng cho các phần tử khớp bộ chọn này. */
+.order-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Định dạng .order-line span; áp dụng cho các phần tử khớp bộ chọn này. */
+.order-line span {
+    flex: 1;
+    font-size: .85rem;
+}
+
+/* Định dạng .order-line strong; áp dụng cho các phần tử khớp bộ chọn này. */
+.order-line strong {
+    font-size: .9rem;
+}
+
+/* Định dạng .order-line img; áp dụng cho các phần tử khớp bộ chọn này. */
+.order-line img {
+    background: #e5f3fa;
+    border-radius: 8px;
+}
+
+/* Định dạng .success-panel; áp dụng cho các phần tử khớp bộ chọn này. */
+.success-panel {
+    padding: 36px;
+    border-radius: var(--radius);
+}

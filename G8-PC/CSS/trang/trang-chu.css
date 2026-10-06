@@ -1,0 +1,105 @@
+/* Hero xanh công nghệ cho đề tài bán PC. */
+.hero {
+    background: linear-gradient(115deg, #0b0f19, #1f2937 65%, #123c55);
+    color: white;
+    padding: 56px;
+    border-radius: var(--radius);
+}
+
+/* Định dạng .hero h1; áp dụng cho các phần tử khớp bộ chọn này. */
+.hero h1 {
+    max-width: 720px;
+}
+
+/* Định dạng .hero p; áp dụng cho các phần tử khớp bộ chọn này. */
+.hero p {
+    color: #d8d7d3;
+    max-width: 600px;
+}
+
+/* Định dạng .hero .eyebrow; áp dụng cho các phần tử khớp bộ chọn này. */
+.hero .eyebrow {
+    color: var(--mau-nhan);
+}
+
+/* Khối danh mục làm mốc định vị: danh sách xổ xuống không đẩy carousel hoặc sản phẩm. */
+.category-panel {
+    position: relative;
+    z-index: 5;
+    border-radius: var(--radius);
+    background: white;
+    box-shadow: var(--bong);
+}
+/* Xóa khoảng cách mặc định của h2 để cả vùng tiêu đề trở thành nút dễ bấm. */
+.category-heading { margin: 0; font-size: 1rem; }
+/* Nút dùng màu hiện tại của website và phủ hết chiều rộng cột Bootstrap. */
+.category-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    border-radius: var(--radius);
+    background: white;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+/* Trạng thái focus giúp người dùng bàn phím nhận biết nút đang được chọn. */
+.category-toggle:focus-visible { outline: 3px solid var(--mau-nhan-dam); outline-offset: 2px; }
+/* aria-expanded do JS thay đổi; mũi tên thể hiện trạng thái đóng/mở. */
+.category-toggle[aria-expanded="true"] .category-arrow { transform: rotate(180deg); }
+/* Không để khoảng trống giữa nút và danh sách để rê chuột xuống không làm menu đóng. */
+.category-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    border: 1px solid var(--line);
+    border-radius: 0 0 var(--radius) var(--radius);
+    background: white;
+    box-shadow: var(--bong);
+}
+/* hidden loại danh sách khỏi hiển thị và thứ tự Tab khi menu đang đóng. */
+.category-menu[hidden] { display: none; }
+/* Các lựa chọn có vùng bấm rộng, mũi tên căn phải và màu phản hồi khi rê chuột/focus. */
+.category-menu a { display: flex; justify-content: space-between; gap: 8px; padding: 12px; border-radius: 8px; }
+.category-menu a:hover, .category-menu a:focus-visible { background: #e5f3fa; color: var(--mau-nhan-dam); }
+
+/* Định dạng .carousel-pc; áp dụng cho các phần tử khớp bộ chọn này. */
+.carousel-pc {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #20262c;
+}
+
+/* Định dạng .carousel-pc .carousel-item img; áp dụng cho các phần tử khớp bộ chọn này. */
+.carousel-pc .carousel-item img {
+    height: 370px;
+    width: 100%;
+    object-fit: contain;
+    background: #e5f3fa;
+}
+
+/* Định dạng .carousel-pc .carousel-caption; áp dụng cho các phần tử khớp bộ chọn này. */
+.carousel-pc .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 48px;
+    background: #101820d9;
+    color: white;
+}
+
+/* Định dạng .carousel-caption p; áp dụng cho các phần tử khớp bộ chọn này. */
+.carousel-caption p {
+    color: #eee;
+    margin: 0;
+}

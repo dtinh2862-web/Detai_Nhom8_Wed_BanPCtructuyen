@@ -1,0 +1,73 @@
+/* Card biểu mẫu dùng chung ở tài khoản và checkout. */
+.form-panel,
+.summary,
+.registration-result {
+    background: white;
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--bong);
+}
+
+/* Định dạng .form-panel; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-panel {
+    display: grid;
+    gap: 18px;
+}
+
+/* Định dạng .form-panel label; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-panel label {
+    display: grid;
+    gap: 7px;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.form-control,
+/* Định dạng .form-select; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-select {
+    border-radius: 9px;
+    padding: 11px 12px;
+}
+
+.form-control:focus,
+/* Định dạng .form-select:focus; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-select:focus {
+    border-color: var(--mau-nhan);
+    box-shadow: 0 0 0 3px #67d9ed40;
+}
+
+/* Định dạng .form-check-input:checked; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-check-input:checked {
+    background-color: var(--mau-nhan-dam);
+    border-color: var(--mau-nhan-dam);
+}
+
+/* Định dạng .form-panel .radio; áp dụng cho các phần tử khớp bộ chọn này. */
+.form-panel .radio {
+    display: flex;
+    align-items: center;
+}
+
+/* Định dạng .radio input; áp dụng cho các phần tử khớp bộ chọn này. */
+.radio input {
+    width: 18px;
+    height: 18px;
+}
+
+/* Định dạng legend; áp dụng cho các phần tử khớp bộ chọn này. */
+legend {
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+/* Định dạng .narrow; áp dụng cho các phần tử khớp bộ chọn này. */
+.narrow {
+    max-width: 560px;
+    margin-inline: auto;
+}
+
+/* Định dạng .alert; áp dụng cho các phần tử khớp bộ chọn này. */
+.alert {
+    margin-bottom: 0;
+}

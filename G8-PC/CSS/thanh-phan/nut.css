@@ -1,0 +1,37 @@
+/* Nút chính dùng btn-warning; nút chưa chỉ định biến thể cũng theo màu xanh chủ đạo. */
+.btn {
+    border-radius: 10px;
+    font-weight: 650;
+    padding: 10px 16px;
+}
+
+.btn-warning,
+/* Định dạng .btn:not(.btn-dark):not(.btn-outline-dark):not(.btn-outline-light); áp dụng cho các phần tử khớp bộ chọn này. */
+.btn:not(.btn-dark):not(.btn-outline-dark):not(.btn-outline-light) {
+    color: var(--ink);
+    border-color: var(--mau-nhan);
+    background: linear-gradient(115deg, var(--mau-nhan-sang), var(--mau-nhan));
+}
+
+/* Định dạng .btn-warning:hover; áp dụng cho các phần tử khớp bộ chọn này. */
+.btn-warning:hover {
+    background: var(--mau-nhan-dam);
+    color: white;
+    border-color: var(--mau-nhan-dam);
+}
+
+/* Định dạng .btn-dark; áp dụng cho các phần tử khớp bộ chọn này. */
+.btn-dark {
+    background: var(--dark);
+}
+
+/* Định dạng .btn-outline-dark; áp dụng cho các phần tử khớp bộ chọn này. */
+.btn-outline-dark {
+    background: transparent;
+}
+
+/* Định dạng button:disabled; áp dụng cho các phần tử khớp bộ chọn này. */
+button:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}

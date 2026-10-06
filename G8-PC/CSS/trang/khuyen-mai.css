@@ -1,0 +1,24 @@
+/* Bố cục riêng trang Khuyến mãi; màu và component chung lấy từ chinh.css. */
+.khuyen-mai .page-title {
+    padding-block: 28px 36px;
+}
+
+/* Thẻ mã có mã dễ nhìn, nút lưu và đường dẫn sang danh sách. */
+.promo-card {
+    height: 100%;
+    padding: 28px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--bong);
+}
+
+/* Định dạng .promo-card code; áp dụng cho các phần tử khớp bộ chọn này. */
+.promo-card code {
+    display: block;
+    color: var(--accent);
+    border: 1px dashed var(--accent);
+    padding: 12px;
+    margin-block: 20px;
+    font-size: 1.3rem;
+}

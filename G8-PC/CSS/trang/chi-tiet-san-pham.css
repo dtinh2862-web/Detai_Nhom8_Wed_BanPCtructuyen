@@ -1,0 +1,74 @@
+/* Ảnh lớn và thông tin chia hai cột Bootstrap; các nút tự xuống hàng. */
+.detail-image img {
+    background: #e5f3fa;
+    border-radius: var(--radius);
+    width: 100%;
+}
+
+/* Định dạng .detail-price; áp dụng cho các phần tử khớp bộ chọn này. */
+.detail-price {
+    font-size: 2rem;
+    font-weight: 750;
+    color: #036980;
+}
+
+/* Định dạng #add-form; áp dụng cho các phần tử khớp bộ chọn này. */
+#add-form {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+/* Định dạng #add-form label; áp dụng cho các phần tử khớp bộ chọn này. */
+#add-form label {
+    max-width: 110px;
+}
+
+/* Định dạng .detail-grid h1; áp dụng cho các phần tử khớp bộ chọn này. */
+.detail-grid h1 {
+    font-size: 2rem;
+}
+
+/* Định dạng .spec-tabs; áp dụng cho các phần tử khớp bộ chọn này. */
+.spec-tabs {
+    background: white;
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--bong);
+}
+
+/* Định dạng .thumbnail-controls; áp dụng cho các phần tử khớp bộ chọn này. */
+.thumbnail-controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* Định dạng .thumbnail-controls img; áp dụng cho các phần tử khớp bộ chọn này. */
+.thumbnail-controls img {
+    width: 70px;
+}
+
+/* Đổi kích thước ảnh khi người dùng chủ động chọn chế độ xem. */
+#detail-photo {
+    max-height: 480px;
+    object-fit: contain;
+}
+
+/* Định dạng #detail-photo.zoomed; áp dụng cho các phần tử khớp bộ chọn này. */
+#detail-photo.zoomed {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Khung số lượng giữ ba phần nút/ô/nút cùng hàng. */
+.detail-quantity {
+    width: 190px;
+}
+
+/* Định dạng .detail-quantity .btn; áp dụng cho các phần tử khớp bộ chọn này. */
+.detail-quantity .btn {
+    padding-inline: 12px;
+}

@@ -1,0 +1,18 @@
+/* Khối tiêu đề tin dùng cùng nền xanh công nghệ của website. */
+.tin-tuc .page-title {
+    padding: 40px;
+    border-radius: var(--radius);
+    color: white;
+    background: linear-gradient(115deg, #0b0f19, #1f2937, #123c55);
+    margin-bottom: 32px;
+}
+
+/* Định dạng .tin-tuc .page-title p; áp dụng cho các phần tử khớp bộ chọn này. */
+.tin-tuc .page-title p {
+    color: #dedbd4;
+}
+
+/* Định dạng .tin-tuc .page-title .eyebrow; áp dụng cho các phần tử khớp bộ chọn này. */
+.tin-tuc .page-title .eyebrow {
+    color: var(--mau-nhan);
+}

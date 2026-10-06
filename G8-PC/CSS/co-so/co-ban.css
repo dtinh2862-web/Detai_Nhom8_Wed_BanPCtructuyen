@@ -1,0 +1,227 @@
+/* Kiểu chữ và nền toàn website; flex giúp footer xuống cuối trang ngắn. */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+}
+
+/* Định dạng main; áp dụng cho các phần tử khớp bộ chọn này. */
+main {
+    flex: 1;
+    padding-block: 40px 64px;
+}
+
+/* Định dạng img; áp dụng cho các phần tử khớp bộ chọn này. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Định dạng a; áp dụng cho các phần tử khớp bộ chọn này. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Định dạng a:hover; áp dụng cho các phần tử khớp bộ chọn này. */
+a:hover {
+    color: var(--accent);
+}
+
+h1,
+h2,
+/* Định dạng h3; áp dụng cho các phần tử khớp bộ chọn này. */
+h3 {
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+/* Định dạng h1; áp dụng cho các phần tử khớp bộ chọn này. */
+h1 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+/* Định dạng h2; áp dụng cho các phần tử khớp bộ chọn này. */
+h2 {
+    font-size: 1.7rem;
+}
+
+/* Định dạng h3; áp dụng cho các phần tử khớp bộ chọn này. */
+h3 {
+    font-size: 1.1rem;
+}
+
+/* Định dạng p; áp dụng cho các phần tử khớp bộ chọn này. */
+p {
+    color: var(--muted);
+}
+
+/* Định dạng [hidden]; áp dụng cho các phần tử khớp bộ chọn này. */
+[hidden] {
+    display: none !important;
+}
+
+/* Phản hồi bàn phím và bỏ chuyển động nếu người dùng yêu cầu. */
+:focus-visible {
+    outline: 3px solid var(--mau-nhan-dam);
+    outline-offset: 4px;
+}
+
+.sr-only,
+/* Định dạng .skip-link:not(:focus); áp dụng cho các phần tử khớp bộ chọn này. */
+.skip-link:not(:focus) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+/* Định dạng .skip-link:focus; áp dụng cho các phần tử khớp bộ chọn này. */
+.skip-link:focus {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 2000;
+    background: white;
+    padding: 12px;
+}
+
+/* Khối tiêu đề, nhóm nội dung và dòng nhãn dùng chung. */
+.page-title {
+    padding-block: 12px 32px;
+}
+
+/* Định dạng .page-title p; áp dụng cho các phần tử khớp bộ chọn này. */
+.page-title p {
+    max-width: 700px;
+}
+
+/* Định dạng .eyebrow; áp dụng cho các phần tử khớp bộ chọn này. */
+.eyebrow {
+    display: block;
+    color: var(--accent);
+    font-size: .75rem;
+    font-weight: 750;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* Định dạng .section; áp dụng cho các phần tử khớp bộ chọn này. */
+.section {
+    margin-top: 48px;
+}
+
+/* Định dạng .section-heading; áp dụng cho các phần tử khớp bộ chọn này. */
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* Định dạng .section-heading h2; áp dụng cho các phần tử khớp bộ chọn này. */
+.section-heading h2 {
+    margin: 0;
+}
+
+/* Định dạng .small; áp dụng cho các phần tử khớp bộ chọn này. */
+.small {
+    font-size: .85rem;
+    color: var(--muted);
+}
+
+/* Định dạng .price; áp dụng cho các phần tử khớp bộ chọn này. */
+.price {
+    color: #036980;
+    font-size: 1.2rem;
+}
+
+/* Định dạng .empty; áp dụng cho các phần tử khớp bộ chọn này. */
+.empty {
+    padding: 42px 24px;
+    text-align: center;
+    background: white;
+    border-radius: var(--radius);
+}
+
+/* Định dạng .table-scroll; áp dụng cho các phần tử khớp bộ chọn này. */
+.table-scroll {
+    overflow-x: auto;
+}
+
+/* Định dạng table; áp dụng cho các phần tử khớp bộ chọn này. */
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th,
+/* Định dạng td; áp dụng cho các phần tử khớp bộ chọn này. */
+td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Định dạng caption; áp dụng cho các phần tử khớp bộ chọn này. */
+caption {
+    padding: 12px;
+}
+
+/* Thông báo trạng thái riêng, không dùng class toast của thư viện. */
+.site-notice {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    max-width: min(420px, calc(100% - 48px));
+    padding: 16px 24px;
+    background: var(--dark);
+    color: white;
+    border-left: 4px solid var(--mau-nhan);
+    border-radius: 12px;
+    z-index: 2000;
+    box-shadow: var(--bong);
+}
+
+/* Thanh công cụ dùng chung các trang chuyển từ collection/sale/promotion. */
+.browse-toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    margin-bottom: 28px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+/* Định dạng .browse-toolbar .form-control; áp dụng cho các phần tử khớp bộ chọn này. */
+.browse-toolbar .form-control {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Định dạng .browse-toolbar .form-select; áp dụng cho các phần tử khớp bộ chọn này. */
+.browse-toolbar .form-select {
+    width: auto;
+}
+
+/* Định dạng .browse-toolbar label; áp dụng cho các phần tử khớp bộ chọn này. */
+.browse-toolbar label {
+    white-space: nowrap;
+}
+
+/* Định dạng .saved-actions; áp dụng cho các phần tử khớp bộ chọn này. */
+.saved-actions {
+    padding: 0 20px 20px;
+}

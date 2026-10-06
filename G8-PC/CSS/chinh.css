@@ -1,0 +1,15 @@
+/* Mục lục CSS CHUNG. Mỗi HTML tự link thêm đúng một CSS/trang tương ứng. */
+@import url("./co-so/dat-lai.css");
+@import url("./co-so/bien-mau.css");
+@import url("./co-so/co-ban.css");
+/* Navbar và footer dùng cùng kiểu trên 15 trang. */
+@import url("./bo-cuc/dau-trang.css");
+@import url("./bo-cuc/thanh-dieu-huong.css");
+@import url("./bo-cuc/chan-trang.css");
+/* Component dùng lại: nút, form, card sản phẩm và tin. */
+@import url("./thanh-phan/nut.css");
+@import url("./thanh-phan/bieu-mau.css");
+@import url("./thanh-phan/the-san-pham.css");
+@import url("./thanh-phan/the-tin-tuc.css");
+/* Responsive chung có bộ chọn body để ưu tiên hơn quy tắc trang riêng. */
+@import url("./tuong-thich/tuong-thich.css");
