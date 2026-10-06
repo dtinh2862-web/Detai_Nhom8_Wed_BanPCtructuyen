@@ -1,6 +1,0 @@
-/* Form đăng ký rộng hơn login; các trường dùng Bootstrap row/col trong HTML. */
-.dang-ky .page-title { text-align: center; }
-.dang-ky .page-title p { margin-inline: auto; }
-#register-form { max-width: 880px; }
-.registration-result { max-width: 880px; margin: 28px auto; border-top: 4px solid var(--mau-nhan); }
-.registration-result dl { display: grid; grid-template-columns: 160px 1fr; gap: 12px; }
